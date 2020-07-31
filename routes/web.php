@@ -14,10 +14,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 //*************************************(INICIO DEL SISTEMA)*************************************************
-Route::get('/', 'HomeController@index')->name('home.index');
+Route::get('/', 'LoginController@login')->name('user.index');
 
+Route::post('/login', 'LoginController@authenticate')->name('user.login');
+Route::get('/logout', function () {
+    Auth::logout();
+    return redirect('/');
+})->name('user.logout');
 
 //**********************************(MENU PRINCIPAL)*************************************************
+
+Route::get('/home', 'HomeController@index')->name('home.index');
 
 //////////////////////////////TRANSACCIONES///////////////////////////////////////////
 Route::prefix('transaccion')->group(function () {
@@ -48,13 +55,18 @@ Route::prefix('estadistica')->group(function () {
 
 //////////////////////////////SEGURIDAD///////////////////////////////////////////
 Route::prefix('seguridad')->group(function () {
-  Route::get('/', 'SeguridadController@index')->name('seguridad.index');
-
+    Route::get('/user', 'User\UserController@index')->name('user.index');
+    Route::get('/user/nueva', 'User\UserController@nueva')->name('user.nueva');
+    Route::post('/user/crear', 'User\UserController@crear')->name('user.crear');
+    Route::get('/user/editar/{id}', 'User\UserController@editar')->name('user.editar');
+    Route::post('/user/modificar/{id}', 'User\UserController@modificar')->name('user.modificar');
+    Route::get('/user/eliminar/{id}', 'User\UserController@eliminar')->name('user.eliminar');
   //---------------------------ALMACENES------------------------------------------------
   //Route::get('almacen', 'AlmaceneController@index')->name('almacen.index');
   
 });
 
+Route::match(['get', 'post'], '/user', 'User\UserController@index')->name('user');
 
 
 

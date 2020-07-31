@@ -12,7 +12,7 @@
         <div class="nav flex-column nav-pills" id="" role="tablist" aria-orientation="vertical">
             <blockquote class="pull-right"><h1>Configuraciones</h1></blockquote>    
 
-            <a class="nav-link active" id="" data-toggle="pill" href="{{route('almacen.index')}}" role="tab" aria-controls="v-pills-profile" aria-selected="false"><i class="fas fa-warehouse"></i> Almacén</a>
+            <a class="nav-link" id="" data-toggle="pill" href="{{route('almacen.index')}}" role="tab" aria-controls="v-pills-profile" aria-selected="false"><i class="fas fa-warehouse"></i> Almacén</a>
             <a class="nav-link" id="" data-toggle="pill" href="#" role="tab" aria-controls="v-pills-profile" aria-selected="false"><i class="fab fa-elementor"></i>  Cargo</a>
             <a class="nav-link" id="" data-toggle="pill" href="#" role="tab" aria-controls="v-pills-messages" aria-selected="false"><i class="fab fa-creative-commons-by"></i>  Cliente</a>
             <a class="nav-link" id="" data-toggle="pill" href="#" role="tab" aria-controls="v-pills-settings" aria-selected="false"><i class="fab fa-elementor"></i>  Concepto</a>
@@ -44,3 +44,6 @@
 </div>
 
 @endsection
+@push('scripts')
+    <script src="{{ asset('js/configuraciones.js') }}"></script>
+@endpush

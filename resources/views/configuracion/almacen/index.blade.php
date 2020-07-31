@@ -25,9 +25,9 @@
             <tbody>
                
                     <tr>
-                        <td>{{ $almacen->id }}</td>
-                        <td>{{ $almacen->cod_alm }}</td>
-                        <td>{{ $almacen->nombre_almacen }}</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
                         <td><i class="fas fa-edit fa-lg"></i></a></td>
                         <td><i class="fas fa-trash fa-lg"></i></a></td>
                     </tr>
