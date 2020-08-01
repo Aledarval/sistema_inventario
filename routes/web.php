@@ -39,7 +39,7 @@ Route::prefix('transaccion')->group(function () {
 Route::prefix('configuracion')->group(function () {
   Route::get('/', 'ConfiguracionController@index')->name('configuracion.index');
 
-  //---------------------------ALMACENES------------------------------------------------
+  //---------------------------Almacenes------------------------------------------------
   Route::get('almacen', 'AlmaceneController@index')->name('almacen.index');
   
 });

@@ -17,34 +17,28 @@
 
 		<nav class="mt-2">
 			<ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-				<li class="nav-item">
-					<a href="{{route('transaccion.index')}}" class="nav-link">
-						<i class="fas fa-calculator"></i>
-						<p>Transacciones</p>
-					</a>
-                </li>
-                <li class="nav-header">CONFIGURACIONES</li>
+				
                 <li class="nav-item">
-                    <a href="{{route('almacen.index')}}" class="nav-link">
-                        <i class="nav-icon fas fa-warehouse"></i>
-                        <p>Almacén</p>
+                    <a href="{{route('transaccion.index')}}" class="nav-link">
+                        <i class="fas fa-exchange-alt"></i> 
+                        <p>  Transacciones</p>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
-                        <i class="nav-icon fab fa-elementor"></i>
-                        <p>Cargo</p>
+                    <a href="{{route('configuracion.index')}}" class="nav-link">
+                        <i class="fas fa-cog"></i>
+                        <p>  Configuraciones</p>
                     </a>
                 </li>
-				<li class="nav-item">
-					<a href="{{route('estadistica.index')}}" class="nav-link">
-						<i class="fas fa-chart-pie"></i>
-						<p>Estadísticas</p>
-					</a>
-				</li>
-				<li class="nav-header">SEGURIDAD</li>
                 <li class="nav-item">
-                    <a href="{{route('user.index')}}" class="nav-link">
+                    <a href="{{route('estadistica.index')}}" class="nav-link">
+                        <i class="fas fa-file-pdf"></i>
+                        <p>  Reportes</p>
+                    </a>
+                </li>
+				<li class="nav-header"> <i class="fas fa-lock"> Seguridad </i></li>
+                <li class="nav-item"> 
+					<a href="{{route('user.index')}}" class="nav-link">
                         <i class="nav-icon fas fa-user"></i>
                         <p>Usuarios</p>
                     </a>

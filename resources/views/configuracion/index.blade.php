@@ -10,29 +10,29 @@
 </br>
     <div class="card-header">
         <div class="nav flex-column nav-pills" id="" role="tablist" aria-orientation="vertical">
-            <blockquote class="pull-right"><h1>Configuraciones</h1></blockquote>    
+            <blockquote class="pull-right"><h1><i class="fas fa-cog"></i> Configuraciones</h1></blockquote>    
 
-            <a class="nav-link" id="" data-toggle="pill" href="{{route('almacen.index')}}" role="tab" aria-controls="v-pills-profile" aria-selected="false"><i class="fas fa-warehouse"></i> Almacén</a>
-            <a class="nav-link" id="" data-toggle="pill" href="#" role="tab" aria-controls="v-pills-profile" aria-selected="false"><i class="fab fa-elementor"></i>  Cargo</a>
-            <a class="nav-link" id="" data-toggle="pill" href="#" role="tab" aria-controls="v-pills-messages" aria-selected="false"><i class="fab fa-creative-commons-by"></i>  Cliente</a>
-            <a class="nav-link" id="" data-toggle="pill" href="#" role="tab" aria-controls="v-pills-settings" aria-selected="false"><i class="fab fa-elementor"></i>  Concepto</a>
-            <a class="nav-link" id="" data-toggle="pill" href="#" role="tab" aria-controls="v-pills-home" aria-selected="false">Documento</a>
-            <a class="nav-link" id="" data-toggle="pill" href="#" role="tab" aria-controls="v-pills-profile" aria-selected="false">Espacio</a>
-            <a class="nav-link" id="" data-toggle="pill" href="#" role="tab" aria-controls="v-pills-messages" aria-selected="false">Estante</a>
-            <a class="nav-link" id="" data-toggle="pill" href="#" role="tab" aria-controls="v-pills-settings" aria-selected="false"><i class="fab fa-elementor"></i>  Grupo</a>
-            <a class="nav-link" id="" data-toggle="pill" href="#" role="tab" aria-controls="v-pills-home" aria-selected="false">Medida</a>
-            <a class="nav-link" id="" data-toggle="pill" href="#" role="tab" aria-controls="v-pills-profile" aria-selected="false"><i class="fas fa-pallet"></i> Mesón</a> 
-            <a class="nav-link" id="" data-toggle="pill" href="#" role="tab" aria-controls="v-pills-messages" aria-selected="false"><i class="fas fa-pallet"></i>  Paleta</a>
-            <a class="nav-link" id="" data-toggle="pill" href="#" role="tab" aria-controls="v-pills-settings" aria-selected="false">Proceso</a>
-            <a class="nav-link" id="" data-toggle="pill" href="#" role="tab" aria-controls="v-pills-home" aria-selected="false"><i class="fas fa-boxes"></i>  Producto</a>
-            <a class="nav-link" id="" data-toggle="pill" href="#" role="tab" aria-controls="v-pills-profile" aria-selected="false"><i class="fab fa-creative-commons-by"></i>Proveedor</a>
-            <a class="nav-link" id="" data-toggle="pill" href="#" role="tab" aria-controls="v-pills-messages" aria-selected="false"><i class="fas fa-bezier-curve"></i>  Puesto</a>
-            <a class="nav-link" id="" data-toggle="pill" href="#" role="tab" aria-controls="v-pills-settings" aria-selected="false"><i class="fab fa-creative-commons-by"></i>Requiriente</a>
-            <a class="nav-link" id="" data-toggle="pill" href="#" role="tab" aria-controls="v-pills-home" aria-selected="false"><i class="fas fa-bezier-curve"></i> Sección</a>
-            <a class="nav-link" id="" data-toggle="pill" href="#" role="tab" aria-controls="v-pills-profile" aria-selected="false"><i class="fas fa-bezier-curve"></i> Sub-grupo</a>
-            <a class="nav-link" id="" data-toggle="pill" href="#" role="tab" aria-controls="v-pills-messages" aria-selected="false"><i class="fas fa-arrows-alt-h"></i> Tipo de Concepto</a>
-            <a class="nav-link" id="" data-toggle="pill" href="#" role="tab" aria-controls="v-pills-settings" aria-selected="false"><i class="fas fa-arrows-alt-h"></i> Tipo de Proceso</a>
-            <a class="nav-link" id="" data-toggle="pill" href="#" role="tab" aria-controls="v-pills-home" aria-selected="false">Unidad</a>
+            <a class="nav-link active" id="" data-toggle="pill" href="#" role="tab" aria-controls="v-pills-profile" aria-selected="false"><i class="fas fa-cog"></i> Almacén</a>
+            <a class="nav-link" id="" data-toggle="pill" href="#" role="tab" aria-controls="v-pills-profile" aria-selected="false"><i class="fas fa-cog"></i> Cargo</a>
+            <a class="nav-link" id="" data-toggle="pill" href="#" role="tab" aria-controls="v-pills-messages" aria-selected="false"><i class="fas fa-cog"></i>  Cliente</a>
+            <a class="nav-link" id="" data-toggle="pill" href="#" role="tab" aria-controls="v-pills-settings" aria-selected="false"><i class="fas fa-cog"></i>  Concepto</a>
+            <a class="nav-link" id="" data-toggle="pill" href="#" role="tab" aria-controls="v-pills-home" aria-selected="false"><i class="fas fa-cog"></i> Documento</a>
+            <a class="nav-link" id="" data-toggle="pill" href="#" role="tab" aria-controls="v-pills-profile" aria-selected="false"><i class="fas fa-cog"></i> Espacio</a>
+            <a class="nav-link" id="" data-toggle="pill" href="#" role="tab" aria-controls="v-pills-messages" aria-selected="false"><i class="fas fa-cog"></i> Estante</a>
+            <a class="nav-link" id="" data-toggle="pill" href="#" role="tab" aria-controls="v-pills-settings" aria-selected="false"><i class="fas fa-cog"></i>  Grupo</a>
+            <a class="nav-link" id="" data-toggle="pill" href="#" role="tab" aria-controls="v-pills-home" aria-selected="false"><i class="fas fa-cog"></i> Medida</a>
+            <a class="nav-link" id="" data-toggle="pill" href="#" role="tab" aria-controls="v-pills-profile" aria-selected="false"><i class="fas fa-cog"></i> Mesón</a> 
+            <a class="nav-link" id="" data-toggle="pill" href="#" role="tab" aria-controls="v-pills-messages" aria-selected="false"><i class="fas fa-cog"></i>  Paleta</a>
+            <a class="nav-link" id="" data-toggle="pill" href="#" role="tab" aria-controls="v-pills-settings" aria-selected="false"><i class="fas fa-cog"></i> Proceso</a>
+            <a class="nav-link" id="" data-toggle="pill" href="#" role="tab" aria-controls="v-pills-home" aria-selected="false"><i class="fas fa-cog"></i>  Producto</a>
+            <a class="nav-link" id="" data-toggle="pill" href="#" role="tab" aria-controls="v-pills-profile" aria-selected="false"><i class="fas fa-cog"></i>Proveedor</a>
+            <a class="nav-link" id="" data-toggle="pill" href="#" role="tab" aria-controls="v-pills-messages" aria-selected="false"><i class="fas fa-cog"></i>  Puesto</a>
+            <a class="nav-link" id="" data-toggle="pill" href="#" role="tab" aria-controls="v-pills-settings" aria-selected="false"><i class="fas fa-cog"></i> Requiriente</a>
+            <a class="nav-link" id="" data-toggle="pill" href="#" role="tab" aria-controls="v-pills-home" aria-selected="false"><i class="fas fa-cog"></i> Sección</a>
+            <a class="nav-link" id="" data-toggle="pill" href="#" role="tab" aria-controls="v-pills-profile" aria-selected="false"><i class="fas fa-cog"></i> Sub-grupo</a>
+            <a class="nav-link" id="" data-toggle="pill" href="#" role="tab" aria-controls="v-pills-messages" aria-selected="false"><i class="fas fa-cog"></i> Tipo de Concepto</a>
+            <a class="nav-link" id="" data-toggle="pill" href="#" role="tab" aria-controls="v-pills-settings" aria-selected="false"><i class="fas fa-cog"></i> Tipo de Proceso</a>
+            <a class="nav-link" id="" data-toggle="pill" href="#" role="tab" aria-controls="v-pills-home" aria-selected="false"><i class="fas fa-cog"></i> Unidad</a>
         </div>
         <div class="tab-content" id="v-pills-tabContent">
             <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab"></div>
@@ -44,6 +44,7 @@
 </div>
 
 @endsection
-@push('scripts')
-    <script src="{{ asset('js/configuraciones.js') }}"></script>
-@endpush
+
+
+
+
