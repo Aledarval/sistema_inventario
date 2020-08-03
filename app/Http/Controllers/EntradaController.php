@@ -3,17 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Almacene;
-class AlmaceneController extends Controller
+use App\Entrada;
+class EntradaController extends Controller
 {
     public function index()
     {
-        $almacenes = Almacene::all();
-        return view('configuracion.almacen.index', compact('almacenes'));
-      
+        $entradas = Entrada::all();
+        return view('transaccion.entrada.index', compact('entradas'));
         //$estados = Estado::all();
         //$estados = Estado::get();
         //$almacenes = Almacene::where('estatus', 1)->get();
     }
 }
-

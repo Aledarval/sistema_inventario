@@ -17,32 +17,47 @@
 
 		<nav class="mt-2">
 			<ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-				
-                <li class="nav-item">
-                    <a href="{{route('transaccion.index')}}" class="nav-link">
-                        <i class="fas fa-exchange-alt"></i> 
-                        <p>  Transacciones</p>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-exchange-alt"></i>  Transacciones
                     </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="{{route('user.index')}}">Entradas</a>
+                        <a class="dropdown-item" href="{{route('user.index')}}">Salidas</a>
+                        <a class="dropdown-item" href="{{route('user.index')}}">Movimientos</a>
+                        <a class="dropdown-item" href="{{route('user.index')}}">Inventarios</a>
+                    </div>
                 </li>
-                <li class="nav-item">
-                    <a href="{{route('configuracion.index')}}" class="nav-link">
-                        <i class="fas fa-cog"></i>
-                        <p>  Configuraciones</p>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-cog"></i>  Configuraciones
                     </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="{{route('almacen.index')}}">Almacén</a>
+                        <a class="dropdown-item" href="{{route('user.index')}}">Salidas</a>
+                        <a class="dropdown-item" href="{{route('user.index')}}">Movimientos</a>
+                        <a class="dropdown-item" href="{{route('user.index')}}">Inventarios</a>
+                    </div>
                 </li>
-                <li class="nav-item">
-                    <a href="{{route('estadistica.index')}}" class="nav-link">
-                        <i class="fas fa-file-pdf"></i>
-                        <p>  Reportes</p>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-file-pdf"></i>  Reportes
                     </a>
+                    <div class="dropdown-menu">
+                    <a class="dropdown-item" href="{{route('user.index')}}">Entradas</a>                   
                 </li>
-				<li class="nav-header"> <i class="fas fa-lock"> Seguridad </i></li>
-                <li class="nav-item"> 
-					<a href="{{route('user.index')}}" class="nav-link">
-                        <i class="nav-icon fas fa-user"></i>
-                        <p>Usuarios</p>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-lock"></i>   Seguridad
                     </a>
+                    <div class="dropdown-menu">
+                    <a class="dropdown-item" href="{{route('user.index')}}">Usuario</a>
                 </li>
+               
 			</ul>
 		</nav>
 	</div>

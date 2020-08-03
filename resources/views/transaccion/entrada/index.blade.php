@@ -1,35 +1,27 @@
 @extends('layouts.template')
-@section('title', 'Almacene')
+@section('title', 'Entrada')
 @push('style')
     <link rel="stylesheet" type="text/css" href="{{ asset('css/datatables.min.css') }}"/>
 @endpush
 @section('content')
 <div class="card">
     <div class="card-header">
-      <h3 class="card-title"> <i class="fas fa-cog"></i> Configuración del Almacén</h3>
-      </br>
+      <h3 class="card-title text-danger">Entrada</h3>
+      <a href="{{route('user.nueva')}}" class="btn btn-primary float-right"><i class="fas fa-plus-circle"></i>Nuevo Usuario</a>
     </div>
     <div class="card-body">
-        <div class="col-md-12">
-            <a href="#" class="btn btn-primary mb-4 float-right"><i class="fas fa-plus-circle"></i>Nuevo Almacén</a>
-        </div>
-        
-        </br>
-        </br>
-    <div  class="table-responsive">
-        <table class="table table-bordered table-hover" id="tblAlmacen">
+        <table class="table table-bordered table-hover" id="tblUsuarios">
             <thead>
-
                 <tr>
                     <th>ID</th>
-                    <th>Código</th>
-                    <th>Nombre</th>
+                    <th>Username</th>
+                    <th>Email</th>
                     <th>Editar</th>
                     <th>Eliminar</th>
                 </tr>
             </thead>
             <tbody>
-               
+              
                     <tr>
                         <td></td>
                         <td></td>
@@ -41,17 +33,9 @@
             </tbody>
         </table>
     </div>
-    </div>
-
-   
-</div>
+  </div>
 @endsection
 @push('scripts')
     <script src="{{ asset('js/datatables.min.js') }}"></script>
-    <script>
-        $(document).ready(function(){
-            $('#tblAlmacen').dataTable();
-            
-        })
-    </script>
+    <script src="{{ asset('js/usuarios.js') }}"></script>
 @endpush

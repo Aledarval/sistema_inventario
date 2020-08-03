@@ -28,21 +28,28 @@ Route::get('/home', 'HomeController@index')->name('home.index');
 
 //////////////////////////////TRANSACCIONES///////////////////////////////////////////
 Route::prefix('transaccion')->group(function () {
-  Route::get('/', 'TransaccionController@index')->name('transaccion.index');
+  //Route::get('/', 'TransaccionController@index')->name('transaccion.index');
 
-//---------------------------ALMACENES------------------------------------------------
-  //Route::get('almacen', 'AlmaceneController@index')->name('almacen.index');
+//---------------------------Entradas------------------------------------------------
+  Route::get('/entrada', 'EntradaController@index')->name('entrada.index');
 });
 
 
 //////////////////////////////CONFIGURACIONES///////////////////////////////////////////
 Route::prefix('configuracion')->group(function () {
-  Route::get('/', 'ConfiguracionController@index')->name('configuracion.index');
-
+  //Route::get('/', 'ConfiguracionController@index')->name('configuracion.index');
+  
   //---------------------------Almacenes------------------------------------------------
-  Route::get('almacen', 'AlmaceneController@index')->name('almacen.index');
+  Route::get('/almacen', 'AlmaceneController@index')->name('almacen.index');
+  //Route::get('/user', 'User\UserController@index')->name('user.index');
+  //Route::get('/user/nueva', 'User\UserController@nueva')->name('user.nueva');
+  //Route::post('/user/crear', 'User\UserController@crear')->name('user.crear');
+  //Route::get('/user/editar/{id}', 'User\UserController@editar')->name('user.editar');
+  //Route::post('/user/modificar/{id}', 'User\UserController@modificar')->name('user.modificar');
+  //Route::get('/user/eliminar/{id}', 'User\UserController@eliminar')->name('user.eliminar');
   
 });
+
 
 //////////////////////////////ESTADISTICA///////////////////////////////////////////
 Route::prefix('estadistica')->group(function () {
