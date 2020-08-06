@@ -36,9 +36,9 @@
                     </a>
                     <div class="dropdown-menu">
                         <a class="dropdown-item" href="{{route('almacen.index')}}">Almacén</a>
-                        <a class="dropdown-item" href="{{route('user.index')}}">Salidas</a>
-                        <a class="dropdown-item" href="{{route('user.index')}}">Movimientos</a>
-                        <a class="dropdown-item" href="{{route('user.index')}}">Inventarios</a>
+                        <a class="dropdown-item" href="{{route('unidad.index')}}">Unidad</a>
+                        
+
                     </div>
                 </li>
 

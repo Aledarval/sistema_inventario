@@ -41,51 +41,42 @@ Route::prefix('configuracion')->group(function () {
   
   //---------------------------Almacenes------------------------------------------------
   Route::get('/almacen', 'AlmaceneController@index')->name('almacen.index');
-  //Route::get('/user', 'User\UserController@index')->name('user.index');
-  //Route::get('/user/nueva', 'User\UserController@nueva')->name('user.nueva');
-  //Route::post('/user/crear', 'User\UserController@crear')->name('user.crear');
-  //Route::get('/user/editar/{id}', 'User\UserController@editar')->name('user.editar');
-  //Route::post('/user/modificar/{id}', 'User\UserController@modificar')->name('user.modificar');
-  //Route::get('/user/eliminar/{id}', 'User\UserController@eliminar')->name('user.eliminar');
+  Route::get('/almacen/nueva', 'AlmaceneController@nueva')->name('almacen.nueva');
+  Route::get('/almacen/crear', 'AlmaceneController@nueva')->name('almacen.crear');
+  Route::get('/almacen/editar/{id}', 'AlmaceneController@nueva')->name('almacen.editar');
+  Route::get('/almacen/modificar/{id}', 'AlmaceneController@nueva')->name('almacen.modificar');
+  Route::get('/almacen/eliminar/{id}', 'AlmaceneController@nueva')->name('almacen.eliminar');
+
+  //---------------------------Unidades------------------------------------------------
+  Route::get('/unidad', 'UnidadeController@index')->name('unidad.index');
+  Route::get('/unidad/nueva', 'UnidadeController@nueva')->name('unidad.nueva');
+  Route::get('/unidad/crear', 'UnidadeController@nueva')->name('unidad.crear');
+  Route::get('/unidad/editar/{id}', 'UnidadeController@nueva')->name('unidad.editar');
+  Route::get('/unidad/modificar/{id}', 'UnidadeController@nueva')->name('unidad.modificar');
+  Route::get('/unidad/eliminar/{id}', 'UnidadeController@nueva')->name('unidad.eliminar');
   
 });
 
 
 //////////////////////////////ESTADISTICA///////////////////////////////////////////
 Route::prefix('estadistica')->group(function () {
-  Route::get('/', 'EstadisticaController@index')->name('estadistica.index');
-
-  //---------------------------ALMACENES------------------------------------------------
-  //Route::get('almacen', 'AlmaceneController@index')->name('almacen.index');
+  
   
 });
 
 //////////////////////////////SEGURIDAD///////////////////////////////////////////
+Route::match(['get', 'post'], '/user', 'User\UserController@index')->name('user');
 Route::prefix('seguridad')->group(function () {
-    Route::get('/user', 'User\UserController@index')->name('user.index');
-    Route::get('/user/nueva', 'User\UserController@nueva')->name('user.nueva');
-    Route::post('/user/crear', 'User\UserController@crear')->name('user.crear');
-    Route::get('/user/editar/{id}', 'User\UserController@editar')->name('user.editar');
-    Route::post('/user/modificar/{id}', 'User\UserController@modificar')->name('user.modificar');
-    Route::get('/user/eliminar/{id}', 'User\UserController@eliminar')->name('user.eliminar');
-  //---------------------------ALMACENES------------------------------------------------
-  //Route::get('almacen', 'AlmaceneController@index')->name('almacen.index');
+  
+  //---------------------------Usuario------------------------------------------------
+  Route::get('/user', 'User\UserController@index')->name('user.index');
+  Route::get('/user/nueva', 'User\UserController@nueva')->name('user.nueva');
+  Route::post('/user/crear', 'User\UserController@crear')->name('user.crear');
+  Route::get('/user/editar/{id}', 'User\UserController@editar')->name('user.editar');
+  Route::post('/user/modificar/{id}', 'User\UserController@modificar')->name('user.modificar');
+  Route::get('/user/eliminar/{id}', 'User\UserController@eliminar')->name('user.eliminar');
   
 });
 
-Route::match(['get', 'post'], '/user', 'User\UserController@index')->name('user');
 
 
-
-
-// rutas de estado
-//Route::get('/estado', 'EstadoController@index')->name('estado.index');
-//Route::get('/estado/nueva', 'EstadoController@nueva')->name('estado.nueva');
-//Route::post('/estado/crear', 'EstadoController@crear')->name('estado.crear');
-//Route::get('/estado/editar/{id}', 'EstadoController@editar')->name('estado.editar');
-//Route::post('/estado/modificar/{id}', 'EstadoController@modificar')->name('estado.modificar');
-//Route::get('/estado/eliminar/{id}', 'EstadoController@eliminar')->name('estado.eliminar');
-
-
-//Pruebas varias
-//Route::get('almacen', 'AlmaceneController@index')->name('almacen.index');
