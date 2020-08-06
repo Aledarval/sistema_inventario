@@ -20,8 +20,8 @@ class AlmaceneController extends Controller
     public function crear(Request $request)
     {
         $almacenes = new Almacene();
-        $almacenes->codigo = $request->input('codigo');
-        $almacenes->nombrealm = $request->input('nombrealm');
+        $almacenes->cod_alm = $request->input('codigo');
+        $almacenes->nombre_almacen = $request->input('nombrealm');
         $almacenes->usuario = $request->input('usuario');
         $almacenes->save();
         return redirect('/configuracion/almacen');
@@ -35,8 +35,8 @@ class AlmaceneController extends Controller
     public function modificar($id, Request $request)
     {
         $almacen = Almacene::find($id);
-        $almacen->codigo = $request->input('codigo');
-        $almacen->nombrealm = $request->input('nombrealm');
+        $almacen->cod_alm = $request->input('codigo');
+        $almacen->nombre_almacen = $request->input('nombrealm');
         $almacen->usuario = $request->input('usuario');
         $almacen->save();
         return redirect('/configuracion/almacen');

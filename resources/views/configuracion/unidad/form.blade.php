@@ -7,13 +7,13 @@
             </br>
         </div>   
         <div class="card-body">
-            <form action="{{route('unidad.crear')}}" method="POST" enctype="multipart/form-data" id="frmUnidad">
+            <form action="{{ route('unidad.crear') }}" method="POST" enctype="multipart/form-data" id="frmUnidad">
 @csrf
             <div class="form-row">
                 
                 <div class="form-group col-md-6">
-                    <label for="nombre_unidad">Nombre del Almacén</label>
-                    <input type="text" class="form-control" name="nombre_unidad" id="nombre_unidad" placeholder="Nombre">
+                    <label for="nombre">Nombre del Almacén</label>
+                    <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Nombre">
                 </div>
             </div>
 

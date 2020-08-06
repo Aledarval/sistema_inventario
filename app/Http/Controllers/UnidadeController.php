@@ -20,7 +20,7 @@ class UnidadeController extends Controller
     public function crear(Request $request)
     {
         $unidades = new Unidade();
-        $unidades->nombre_unidad = $request->input('nombre_unidad');
+        $unidades->nombre_unidad = $request->input('nombre');
         $unidades->save();
         return redirect('/configuracion/unidad');
     }
@@ -33,7 +33,7 @@ class UnidadeController extends Controller
     public function modificar($id, Request $request)
     {
         $unidad = Unidade::find($id);
-        $unidad->nombre_unidad = $request->input('nombre_unidad');
+        $unidad->nombre_unidad = $request->input('nombre');
         $unidad->save();
         return redirect('/configuracion/unidad');
     }

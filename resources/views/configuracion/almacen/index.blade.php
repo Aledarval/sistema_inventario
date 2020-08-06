@@ -11,7 +11,7 @@
     </div>
     <div class="card-body">
         <div class="col-md-12">
-            <a href="{{route('almacen.nueva')}}" class="btn btn-primary mb-4 float-right">
+            <a href="{{ route('almacen.nueva') }}" class="btn btn-primary mb-4 float-right">
                 <i class="fas fa-plus-circle"></i> Registrar Almacén
             </a>
         </div>

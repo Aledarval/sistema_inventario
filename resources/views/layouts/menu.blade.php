@@ -36,7 +36,8 @@
                     </a>
                     <div class="dropdown-menu">
                         <a class="dropdown-item" href="{{route('almacen.index')}}">Almacén</a>
-                        <a class="dropdown-item" href="{{route('unidad.index')}}">Unidad</a>                      
+                        <a class="dropdown-item" href="{{route('unidad.index')}}">Unidad</a> 
+                        <a class="dropdown-item" href="{{route('medida.index')}}">Medidas</a>                     
                     </div>
                 </li>
 
