@@ -56,12 +56,12 @@ Route::prefix('configuracion')->group(function () {
   Route::get('/unidad/eliminar/{id}', 'UnidadeController@nueva')->name('unidad.eliminar');
   
   //---------------------------Medidas------------------------------------------------
-  Route::get('/medida', 'UnidadeController@index')->name('medida.index');
-  Route::get('/medida/nueva', 'UnidadeController@nueva')->name('medida.nueva');
-  Route::get('/medida/crear', 'UnidadeController@nueva')->name('medida.crear');
-  Route::get('/medida/editar/{id}', 'UnidadeController@nueva')->name('medida.editar');
-  Route::get('/medida/modificar/{id}', 'UnidadeController@nueva')->name('medida.modificar');
-  Route::get('/unidad/eliminar/{id}', 'UnidadeController@nueva')->name('medida.eliminar');
+  Route::get('/medida', 'MedidaController@index')->name('medida.index');
+  Route::get('/medida/nueva', 'MedidaController@nueva')->name('medida.nueva');
+  Route::get('/medida/crear', 'MedidaController@nueva')->name('medida.crear');
+  Route::get('/medida/editar/{id}', 'MedidaController@nueva')->name('medida.editar');
+  Route::get('/medida/modificar/{id}', 'MedidaController@nueva')->name('medida.modificar');
+  Route::get('/unidad/eliminar/{id}', 'MedidaController@nueva')->name('medida.eliminar');
 });
 
 

@@ -34,8 +34,8 @@
                     <tr>
                         <td>{{ $unidad->id }}</td>
                         <td>{{ $unidad->nombre_unidad }}</td>
-                        <td><a href="{{ route('unidad.editar',['id'=>$unidad->id]) }}"> <i class="fas fa-edit fa-lg"></i></a></td>
-                        <td><a href="{{ route('unidad.eliminar',['id'=>$unidad->id]) }}" class="text-danger"><i class="fas fa-trash fa-lg"></i></a></td>
+                        <td><a href="{{route('unidad.editar',['id'=>$unidad->id])}}"> <i class="fas fa-edit fa-lg"></i></a></td>
+                        <td><a href="" class="text-danger"><i class="fas fa-trash fa-lg"></i></a></td>
                     </tr>
             @endforeach  
             </tbody>
